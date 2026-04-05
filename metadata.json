@@ -1,0 +1,7 @@
+{
+  "name": "Oaxaca Authentic Mexican Food",
+  "description": "A sexy, modern website for Oaxaca Authentic Mexican Food in Troy, MI, featuring fresh, high-quality, and healthy Mexican cuisine.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
