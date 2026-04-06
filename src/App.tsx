@@ -23,7 +23,7 @@ import {
 } from 'lucide-react';
 import { MENU_ITEMS } from './types';
 
-const LOGO_URL = "http://www.oaxacatroy.com/uploads/8/7/1/4/87148458/1473301127.png";
+const LOGO_URL = "oaxLogo-removebg-preview.png";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -46,11 +46,11 @@ const Navbar = () => {
   return (
     <nav className={`fixed top-0 w-full z-50 transition-all duration-500 ${isScrolled ? 'bg-brand-dark/90 backdrop-blur-xl border-b border-white/10 py-3' : 'bg-transparent py-6'}`}>
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-        <a href="#home" className="flex items-center group">
+        <a href="#home" className={`flex items-center group transition-all duration-500 ${isScrolled ? 'bg-white/95 px-4 py-2 rounded-xl soft-industrial-shadow' : ''}`}>
           <img 
             src={LOGO_URL} 
             alt="Oaxaca Logo" 
-            className={`transition-all duration-500 accent-glow ${isScrolled ? 'h-10' : 'h-16 md:h-20'}`}
+            className={`transition-all duration-500 ${isScrolled ? 'h-10' : 'h-16 md:h-20 accent-glow'}`}
             referrerPolicy="no-referrer"
           />
         </a>
@@ -130,12 +130,6 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          <img 
-            src={LOGO_URL} 
-            alt="Oaxaca Logo Large" 
-            className="h-32 md:h-56 mx-auto mb-10 accent-glow"
-            referrerPolicy="no-referrer"
-          />
           <h1 className="text-5xl md:text-8xl font-bold text-white mb-6 tracking-tight leading-[0.9]">
             Authentic <span className="text-brand-accent">Mexican</span> <br />
             Crafted with Heart.
