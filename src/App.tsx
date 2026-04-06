@@ -23,7 +23,7 @@ import {
 } from 'lucide-react';
 import { MENU_ITEMS } from './types';
 
-const LOGO_URL = "oaxLogo-removebg-preview.png";
+const LOGO_URL = "/oaxLogo-removebg-preview.png";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
